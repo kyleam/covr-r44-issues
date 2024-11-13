@@ -1,0 +1,41 @@
+diff --git a/R/parse_data.R b/R/parse_data.R
+index 612200e..60119d5 100644
+--- a/R/parse_data.R
++++ b/R/parse_data.R
+@@ -120,7 +120,8 @@ is_conditional_or_loop <- function(x) is.symbol(x[[1L]]) && as.character(x[[1L]]
+ package_parse_data <- new.env()
+ 
+ get_parse_data <- function(srcfile) {
+-  if (length(package_parse_data) == 0) {
++  sfile <- srcfile[["filename"]]
++  if (!exists(sfile, envir = package_parse_data)) {
+     lines <- getSrcLines(srcfile, 1L, Inf)
+     res <- lapply(split_on_line_directives(lines),
+       function(x) getParseData(parse(text = x, keep.source = TRUE), includeText = TRUE))
+@@ -128,7 +129,7 @@ get_parse_data <- function(srcfile) {
+       package_parse_data[[names(res)[[i]]]] <- res[[i]]
+     }
+   }
+-  package_parse_data[[srcfile[["filename"]]]]
++  package_parse_data[[sfile]]
+ }
+ 
+ clean_parse_data <- function() {
+@@ -137,5 +138,16 @@ clean_parse_data <- function() {
+ 
+ # Needed to work around https://bugs.r-project.org/bugzilla3/show_bug.cgi?id=16756
+ get_tokens <- function(srcref) {
+-  getParseData(srcref) %||% get_parse_data(attr(getSrcref(srcref), "srcfile"))
++  sfile <- attr(getSrcref(srcref), "srcfile")
++  fname <- sfile[["filename"]]
++  res <- get0(fname, envir = package_parse_data)
++  if (is.null(res)) {
++    res <- getParseData(srcref)
++    if (is.null(res)) {
++      res <- get_parse_data(sfile)
++    } else {
++      package_parse_data[[fname]] <- res
++    }
++  }
++  return(res)
+ }
