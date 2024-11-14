@@ -1,5 +1,8 @@
 
 .PHONY: all
+all: output/datatable-r43.stdout
+all: output/datatable-r44-drop-outer.stdout
+all: output/datatable-r44.stdout
 all: output/nanotime-r43.stdout
 all: output/nanotime-r44-drop-outer.stdout
 all: output/nanotime-r44.stdout
@@ -11,6 +14,24 @@ all: output/rutils-r43.stdout
 all: output/rutils-r44-drop-outer.stdout
 all: output/rutils-r44-more-cache.stdout
 all: output/rutils-r44.stdout
+
+# data.table
+
+datatable_url = https://github.com/Rdatatable/data.table.git
+datatable_commit = efcd11a4623ca2859baf359e4dde70d95492bd91
+
+output/datatable-r43.stdout:
+	./img-build.sh datatable-r43 4.3.3 '' '$(datatable_url)' '$(datatable_commit)'
+	./img-run.sh datatable-r43
+
+output/datatable-r44-drop-outer.stdout:
+	./img-build.sh datatable-r44-drop-outer 4.4.2 drop-outer-gpd.diff \
+	  '$(datatable_url)' '$(datatable_commit)'
+	./img-run.sh datatable-r44-drop-outer
+
+output/datatable-r44.stdout:
+	./img-build.sh datatable-r44 4.4.2 '' '$(datatable_url)' '$(datatable_commit)'
+	./img-run.sh datatable-r44 || :
 
 # nanotime
 

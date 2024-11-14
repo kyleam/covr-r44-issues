@@ -13,10 +13,13 @@ RUN apt-get update && \
       libssl-dev \
       libxml2-dev \
       pandoc \
-      time && \
+      pkg-config \
+      time \
+      zlib1g-dev && \
     curl -fSsL "https://cdn.posit.co/r/debian-12/pkgs/r-${R_VERSION}_1_amd64.deb" >/tmp/r.deb && \
     eatmydata apt-get install -y /tmp/r.deb && \
     apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+ENV LANG=en_US.UTF-8
 
 COPY Rprofile.site /opt/R/"$R_VERSION"/lib/R/etc/Rprofile.site
 
