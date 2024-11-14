@@ -23,15 +23,15 @@ Slowdown
 
 **R 4.3 run**
 
-https://github.com/kyleam/covr-r44/blob/feacfae774e36b3e50a26a20804cf09b6d1d99b6/output/rutils-r43.stderr#L161
+https://github.com/kyleam/covr-r44-issues/blob/feacfae774e36b3e50a26a20804cf09b6d1d99b6/output/rutils-r43.stderr#L161
 
 **R 4.4 run**
 
-https://github.com/kyleam/covr-r44/blob/feacfae774e36b3e50a26a20804cf09b6d1d99b6/output/rutils-r44.stderr#L161
+https://github.com/kyleam/covr-r44-issues/blob/feacfae774e36b3e50a26a20804cf09b6d1d99b6/output/rutils-r44.stderr#L161
 
 **R 4.4 patched run**
 
-https://github.com/kyleam/covr-r44/blob/feacfae774e36b3e50a26a20804cf09b6d1d99b6/output/rutils-r44-drop-outer.stderr#L161
+https://github.com/kyleam/covr-r44-issues/blob/feacfae774e36b3e50a26a20804cf09b6d1d99b6/output/rutils-r44-drop-outer.stderr#L161
 
 
 Exclusions error
@@ -39,12 +39,12 @@ Exclusions error
 
 **R 4.3 run**
 
-https://github.com/kyleam/covr-r44/blob/feacfae774e36b3e50a26a20804cf09b6d1d99b6/output/nanotime-r43.stderr#L17-L18
+https://github.com/kyleam/covr-r44-issues/blob/feacfae774e36b3e50a26a20804cf09b6d1d99b6/output/nanotime-r43.stderr#L17-L18
 
 **R 4.4 run**
 
-https://github.com/kyleam/covr-r44/blob/feacfae774e36b3e50a26a20804cf09b6d1d99b6/output/nanotime-r44.stderr#L17-L22
+https://github.com/kyleam/covr-r44-issues/blob/feacfae774e36b3e50a26a20804cf09b6d1d99b6/output/nanotime-r44.stderr#L17-L22
 
 **R 4.4 patched run**
 
-https://github.com/kyleam/covr-r44/blob/feacfae774e36b3e50a26a20804cf09b6d1d99b6/output/nanotime-r44-drop-outer.stderr#L17-L18
+https://github.com/kyleam/covr-r44-issues/blob/feacfae774e36b3e50a26a20804cf09b6d1d99b6/output/nanotime-r44-drop-outer.stderr#L17-L18
