@@ -45,5 +45,7 @@ ENV R_VERSION "$R_VERSION"
 ARG GID
 ARG UID
 RUN addgroup --gid "$GID" runner && \
-    adduser --disabled-password --uid "$UID" --gid "$GID" runner
+    adduser --disabled-password --uid "$UID" --gid "$GID" runner && \
+    chown -R runner:runner /pkg
+
 USER runner
