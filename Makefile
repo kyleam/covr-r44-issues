@@ -2,20 +2,25 @@
 .PHONY: all
 all: output/datatable-r43.stdout
 all: output/datatable-r44-drop-outer.stdout
+all: output/datatable-r44-proposed-v1.stdout
 all: output/datatable-r44.stdout
 all: output/diffobj-r43.stdout
 all: output/diffobj-r44-drop-outer.stdout
+all: output/diffobj-r44-proposed-v1.stdout
 all: output/diffobj-r44.stdout
 all: output/nanotime-r43.stdout
 all: output/nanotime-r44-drop-outer.stdout
+all: output/nanotime-r44-proposed-v1.stdout
 all: output/nanotime-r44.stdout
 all: output/pagenum-r43.stdout
 all: output/pagenum-r44-drop-outer-no-simplify.stdout
 all: output/pagenum-r44-drop-outer.stdout
+all: output/pagenum-r44-proposed-v1.stdout
 all: output/pagenum-r44.stdout
 all: output/rutils-r43.stdout
 all: output/rutils-r44-drop-outer.stdout
 all: output/rutils-r44-more-cache.stdout
+all: output/rutils-r44-proposed-v1.stdout
 all: output/rutils-r44.stdout
 
 # data.table
@@ -31,6 +36,11 @@ output/datatable-r44-drop-outer.stdout:
 	./img-build.sh datatable-r44-drop-outer 4.4.2 drop-outer-gpd.diff \
 	  '$(datatable_url)' '$(datatable_commit)'
 	./img-run.sh datatable-r44-drop-outer
+
+output/datatable-r44-proposed-v1.stdout:
+	./img-build.sh datatable-r44-proposed-v1 4.4.2 proposed-v1.diff \
+	  '$(datatable_url)' '$(datatable_commit)'
+	./img-run.sh datatable-r44-proposed-v1
 
 output/datatable-r44.stdout:
 	./img-build.sh datatable-r44 4.4.2 '' '$(datatable_url)' '$(datatable_commit)'
@@ -50,6 +60,11 @@ output/diffobj-r44-drop-outer.stdout:
 	  '$(diffobj_url)' '$(diffobj_commit)'
 	./img-run.sh diffobj-r44-drop-outer
 
+output/diffobj-r44-proposed-v1.stdout:
+	./img-build.sh diffobj-r44-proposed-v1 4.4.2 proposed-v1.diff \
+	  '$(diffobj_url)' '$(diffobj_commit)'
+	./img-run.sh diffobj-r44-proposed-v1
+
 output/diffobj-r44.stdout:
 	./img-build.sh diffobj-r44 4.4.2 '' '$(diffobj_url)' '$(diffobj_commit)'
 	./img-run.sh diffobj-r44 || :
@@ -68,6 +83,11 @@ output/nanotime-r44-drop-outer.stdout:
 	  '$(nanotime_url)' '$(nanotime_commit)'
 	./img-run.sh nanotime-r44-drop-outer
 
+output/nanotime-r44-proposed-v1.stdout:
+	./img-build.sh nanotime-r44-proposed-v1 4.4.2 proposed-v1.diff \
+	  '$(nanotime_url)' '$(nanotime_commit)'
+	./img-run.sh nanotime-r44-proposed-v1
+
 output/nanotime-r44.stdout:
 	./img-build.sh nanotime-r44 4.4.2 '' '$(nanotime_url)' '$(nanotime_commit)'
 	./img-run.sh nanotime-r44 || :
@@ -85,6 +105,11 @@ output/pagenum-r44-drop-outer.stdout:
 	./img-build.sh pagenum-r44-drop-outer 4.4.2 drop-outer-gpd.diff \
 	  '$(pagenum_url)' '$(pagenum_commit)'
 	./img-run.sh pagenum-r44-drop-outer
+
+output/pagenum-r44-proposed-v1.stdout:
+	./img-build.sh pagenum-r44-proposed-v1 4.4.2 proposed-v1.diff \
+	  '$(pagenum_url)' '$(pagenum_commit)'
+	./img-run.sh pagenum-r44-proposed-v1
 
 output/pagenum-r44-drop-outer-no-simplify.stdout:
 	./img-build.sh pagenum-r44-drop-outer-no-simplify 4.4.2 \
@@ -109,6 +134,11 @@ output/rutils-r44-drop-outer.stdout:
 	./img-build.sh rutils-r44-drop-outer 4.4.2 drop-outer-gpd.diff \
 	  '$(rutils_url)' '$(rutils_commit)'
 	./img-run.sh rutils-r44-drop-outer
+
+output/rutils-r44-proposed-v1.stdout:
+	./img-build.sh rutils-r44-proposed-v1 4.4.2 proposed-v1.diff \
+	  '$(rutils_url)' '$(rutils_commit)'
+	./img-run.sh rutils-r44-proposed-v1
 
 output/rutils-r44-more-cache.stdout:
 	./img-build.sh rutils-r44-more-cache 4.4.2 gpd-more-cache.diff \

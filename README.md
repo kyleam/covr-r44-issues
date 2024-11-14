@@ -6,16 +6,21 @@ This repository demonstrates two issues with covr and R 4.4:
  * calculating coverage for nanotime triggers an error ("'from' must
    be a finite number") when applying exclusions
 
-The proposed fix under [patches/drop-outer-gpd.diff][f1] resolves the
-above issues.  However, it surfaces a currently unreachable bug in
-covr's `split_on_line_directives` helper (see the `drop-outer` case
-for the pagenum package).
+The [patches/](/patches) subdirectory contains the following patches:
 
-[patches/drop-outer-gpd-no-simplify.diff][f2] includes an additional
-fix for that issue.
+ * [drop-outer-gpd.diff][f1]: the simplest change that resolves the
+    above issues.
+
+ * [drop-outer-gpd-no-simplify.diff][f2]: a fix for a currently
+    unreachable bug in covr's `split_on_line_directives` helper (see
+    the `drop-outer` case for the pagenum package).
+
+ * [proposed-v1][f3]: the actual fix proposed upstream
+
 
 [f1]: /patches/drop-outer-gpd.diff
 [f2]: /patches/drop-outer-gpd-no-simplify.diff
+[f3]: /patches/proposed-v1.diff
 
 
 Slowdown
