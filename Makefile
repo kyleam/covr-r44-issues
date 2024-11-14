@@ -1,5 +1,8 @@
 
 .PHONY: all
+all: output/nanotime-r43.stdout
+all: output/nanotime-r44-drop-outer.stdout
+all: output/nanotime-r44.stdout
 all: output/pagenum-r43.stdout
 all: output/pagenum-r44-drop-outer-no-simplify.stdout
 all: output/pagenum-r44-drop-outer.stdout
@@ -8,6 +11,24 @@ all: output/rutils-r43.stdout
 all: output/rutils-r44-drop-outer.stdout
 all: output/rutils-r44-more-cache.stdout
 all: output/rutils-r44.stdout
+
+# nanotime
+
+nanotime_url = https://github.com/eddelbuettel/nanotime.git
+nanotime_commit = 48d48a7b42e3bef173b5312b5fbb3c9b1776b40f
+
+output/nanotime-r43.stdout:
+	./img-build.sh nanotime-r43 4.3.3 '' '$(nanotime_url)' '$(nanotime_commit)'
+	./img-run.sh nanotime-r43
+
+output/nanotime-r44-drop-outer.stdout:
+	./img-build.sh nanotime-r44-drop-outer 4.4.2 drop-outer-gpd.diff \
+	  '$(nanotime_url)' '$(nanotime_commit)'
+	./img-run.sh nanotime-r44-drop-outer
+
+output/nanotime-r44.stdout:
+	./img-build.sh nanotime-r44 4.4.2 '' '$(nanotime_url)' '$(nanotime_commit)'
+	./img-run.sh nanotime-r44 || :
 
 # pagenum
 
