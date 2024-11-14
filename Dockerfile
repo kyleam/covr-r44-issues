@@ -23,11 +23,12 @@ COPY Rprofile.site /opt/R/"$R_VERSION"/lib/R/etc/Rprofile.site
 RUN /opt/R/"$R_VERSION"/bin/Rscript -e 'install.packages("pak")'
 
 ARG COVR_COMMIT=3c6daa0ef9bc6e34790a0b61798beec137ff9cde
-ARG RUTILS_COMMIT=c80170c7ef244a6dd4bff541eecb1085d8849a9c
+ARG PKG_URL
+ARG PKG_COMMIT
 RUN eatmydata git clone https://github.com/r-lib/covr.git /covr && \
     git -C /covr checkout "$COVR_COMMIT" && \
-    eatmydata git clone https://github.com/HenrikBengtsson/R.utils.git /pkg && \
-    git -C /pkg checkout "$RUTILS_COMMIT"
+    eatmydata git clone "$PKG_URL" /pkg && \
+    git -C /pkg checkout "$PKG_COMMIT"
 
 RUN mkdir /patches
 COPY patches /patches
