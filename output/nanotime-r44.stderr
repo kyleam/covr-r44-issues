@@ -1,0 +1,23 @@
+* installing *source* package 'nanotime' ...
+** using non-staged installation
+** libs
+using C++ compiler: 'g++ (Debian 12.2.0-14) 12.2.0'
+using C++17
+installing to /tmp/RtmpjATCg5/R_LIBS8c61249b/nanotime/libs
+** R
+** demo
+** inst
+** tests
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (nanotime)
+Error in seq.default(df[i, "first_line"], df[i, "last_line"]) : 
+  'from' must be a finite number
+Calls: <Anonymous> ... vlapply -> vapply -> FUN -> %in% -> seq -> seq.default
+Execution halted
+Command exited with non-zero status 1
+46.58

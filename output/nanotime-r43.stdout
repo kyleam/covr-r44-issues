@@ -1,0 +1,24 @@
+g++ -std=gnu++17 -I"/opt/R/4.3.3/lib/R/include" -DNDEBUG  -I'/opt/R/4.3.3/lib/R/library/Rcpp/include' -I'/opt/R/4.3.3/lib/R/library/RcppCCTZ/include' -I'/opt/R/4.3.3/lib/R/library/RcppDate/include' -I/usr/local/include   -I../inst/include -fpic  -g -O2  -O0 --coverage -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++17 -I"/opt/R/4.3.3/lib/R/include" -DNDEBUG  -I'/opt/R/4.3.3/lib/R/library/Rcpp/include' -I'/opt/R/4.3.3/lib/R/library/RcppCCTZ/include' -I'/opt/R/4.3.3/lib/R/library/RcppDate/include' -I/usr/local/include   -I../inst/include -fpic  -g -O2  -O0 --coverage -c duration.cpp -o duration.o
+g++ -std=gnu++17 -I"/opt/R/4.3.3/lib/R/include" -DNDEBUG  -I'/opt/R/4.3.3/lib/R/library/Rcpp/include' -I'/opt/R/4.3.3/lib/R/library/RcppCCTZ/include' -I'/opt/R/4.3.3/lib/R/library/RcppDate/include' -I/usr/local/include   -I../inst/include -fpic  -g -O2  -O0 --coverage -c interval.cpp -o interval.o
+g++ -std=gnu++17 -I"/opt/R/4.3.3/lib/R/include" -DNDEBUG  -I'/opt/R/4.3.3/lib/R/library/Rcpp/include' -I'/opt/R/4.3.3/lib/R/library/RcppCCTZ/include' -I'/opt/R/4.3.3/lib/R/library/RcppDate/include' -I/usr/local/include   -I../inst/include -fpic  -g -O2  -O0 --coverage -c nanotime.cpp -o nanotime.o
+g++ -std=gnu++17 -I"/opt/R/4.3.3/lib/R/include" -DNDEBUG  -I'/opt/R/4.3.3/lib/R/library/Rcpp/include' -I'/opt/R/4.3.3/lib/R/library/RcppCCTZ/include' -I'/opt/R/4.3.3/lib/R/library/RcppDate/include' -I/usr/local/include   -I../inst/include -fpic  -g -O2  -O0 --coverage -c period.cpp -o period.o
+g++ -std=gnu++17 -I"/opt/R/4.3.3/lib/R/include" -DNDEBUG  -I'/opt/R/4.3.3/lib/R/library/Rcpp/include' -I'/opt/R/4.3.3/lib/R/library/RcppCCTZ/include' -I'/opt/R/4.3.3/lib/R/library/RcppDate/include' -I/usr/local/include   -I../inst/include -fpic  -g -O2  -O0 --coverage -c rounding.cpp -o rounding.o
+g++ -std=gnu++17 -I"/opt/R/4.3.3/lib/R/include" -DNDEBUG  -I'/opt/R/4.3.3/lib/R/library/Rcpp/include' -I'/opt/R/4.3.3/lib/R/library/RcppCCTZ/include' -I'/opt/R/4.3.3/lib/R/library/RcppDate/include' -I/usr/local/include   -I../inst/include -fpic  -g -O2  -O0 --coverage -c strnlen.cpp -o strnlen.o
+g++ -std=gnu++17 -shared -L/opt/R/4.3.3/lib/R/lib -L/usr/local/lib --coverage -o nanotime.so RcppExports.o duration.o interval.o nanotime.o period.o rounding.o strnlen.o -L/opt/R/4.3.3/lib/R/lib -lR
+Creating a generic function for 'intersect' from package 'base' in package 'nanotime'
+Creating a generic function for 'union' from package 'base' in package 'nanotime'
+Creating a generic function for 'setdiff' from package 'base' in package 'nanotime'
+Creating a generic function for 'is.unsorted' from package 'base' in package 'nanotime'
+  converting help for package 'nanotime'
+    nano_year                               example
+    nanoduration                            example
+    nanoival                                example
+    nanoperiod                              example
+    nanoperiod.month                        example
+    nanotime                                example
+    rounding                                example
+    seq-nanoival-method                     example
+    seq.nanoduration                        example
+    seq.nanotime                            example
+    set_operations                          example

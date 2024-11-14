@@ -1,0 +1,15 @@
+* installing *source* package 'pagenum' ...
+** using non-staged installation
+** R
+** tests
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (pagenum)
+pagenum Coverage: 94.74%
+R/pagenum.r: 94.74%
+2.30
