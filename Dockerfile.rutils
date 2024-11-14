@@ -26,8 +26,8 @@ ARG COVR_COMMIT=3c6daa0ef9bc6e34790a0b61798beec137ff9cde
 ARG RUTILS_COMMIT=c80170c7ef244a6dd4bff541eecb1085d8849a9c
 RUN eatmydata git clone https://github.com/r-lib/covr.git /covr && \
     git -C /covr checkout "$COVR_COMMIT" && \
-    eatmydata git clone https://github.com/HenrikBengtsson/R.utils.git /R.utils && \
-    git -C /R.utils checkout "$RUTILS_COMMIT"
+    eatmydata git clone https://github.com/HenrikBengtsson/R.utils.git /pkg && \
+    git -C /pkg checkout "$RUTILS_COMMIT"
 
 RUN mkdir /patches
 COPY patches /patches
@@ -36,7 +36,7 @@ RUN test -z "$COVR_PATCH" || \
     git -C /covr apply /patches/"$COVR_PATCH"
 
 RUN eatmydata /opt/R/"$R_VERSION"/bin/Rscript -e 'pak::local_install("/covr", dependencies = TRUE)' && \
-    eatmydata /opt/R/"$R_VERSION"/bin/Rscript -e 'pak::local_install_dev_deps("/R.utils", dependencies = TRUE)'
+    eatmydata /opt/R/"$R_VERSION"/bin/Rscript -e 'pak::local_install_dev_deps("/pkg", dependencies = TRUE)'
 
 COPY --chmod=0755 run.sh /run.sh
 ENV R_VERSION "$R_VERSION"
