@@ -27,12 +27,13 @@ The [patches/](/patches) subdirectory contains the following patches:
     unreachable bug in covr's `split_on_line_directives` helper (see
     the `drop-outer` case for the pagenum package).
 
- * [proposed-v1][f3]: the actual fix proposed upstream
+ * [proposed-v1][f3]: the actual fix proposed upstream ([r-lib/covr#588][pr])
 
 
 [f1]: /patches/drop-outer-gpd.diff
 [f2]: /patches/drop-outer-gpd-no-simplify.diff
 [f3]: /patches/proposed-v1.diff
+[pr]: https://github.com/r-lib/covr/pull/588
 
 
 Slowdown
