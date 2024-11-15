@@ -3,6 +3,9 @@
 all: output/datatable-r43.stdout
 all: output/datatable-r44-drop-outer.stdout
 all: output/datatable-r44.stdout
+all: output/diffobj-r43.stdout
+all: output/diffobj-r44-drop-outer.stdout
+all: output/diffobj-r44.stdout
 all: output/nanotime-r43.stdout
 all: output/nanotime-r44-drop-outer.stdout
 all: output/nanotime-r44.stdout
@@ -32,6 +35,24 @@ output/datatable-r44-drop-outer.stdout:
 output/datatable-r44.stdout:
 	./img-build.sh datatable-r44 4.4.2 '' '$(datatable_url)' '$(datatable_commit)'
 	./img-run.sh datatable-r44 || :
+
+# diffobj
+
+diffobj_url = https://github.com/brodieG/diffobj.git
+diffobj_commit = 614c3e3e8628dba54d56aa4a8cedfa2da5bd2a14
+
+output/diffobj-r43.stdout:
+	./img-build.sh diffobj-r43 4.3.3 '' '$(diffobj_url)' '$(diffobj_commit)'
+	./img-run.sh diffobj-r43
+
+output/diffobj-r44-drop-outer.stdout:
+	./img-build.sh diffobj-r44-drop-outer 4.4.2 drop-outer-gpd.diff \
+	  '$(diffobj_url)' '$(diffobj_commit)'
+	./img-run.sh diffobj-r44-drop-outer
+
+output/diffobj-r44.stdout:
+	./img-build.sh diffobj-r44 4.4.2 '' '$(diffobj_url)' '$(diffobj_commit)'
+	./img-run.sh diffobj-r44 || :
 
 # nanotime
 
