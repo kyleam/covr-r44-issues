@@ -1,3 +1,15 @@
+ * [Overview](#overview)
+ * [Slowdown](#slowdown)
+   * [data.table](#datatable)
+   * [diffobj](#diffobj)
+   * [R.utils](#rutils)
+ * [Exclusions error](#exclusions-error)
+   * [data.table](#datatable-1)
+   * [diffobj](#diffobj-1)
+   * [nanotime](#nanotime)
+
+Overview
+--------
 
 This repository demonstrates two issues with covr and R 4.4:
 
