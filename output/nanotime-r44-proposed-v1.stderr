@@ -1,0 +1,34 @@
+* installing *source* package ‘nanotime’ ...
+** using non-staged installation
+** libs
+using C++ compiler: ‘g++ (Debian 12.2.0-14) 12.2.0’
+using C++17
+installing to /tmp/RtmpJyo4bu/R_LIBS774c33fff/nanotime/libs
+** R
+** demo
+** inst
+** tests
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (nanotime)
+nanotime Coverage: 99.88%
+src/interval.cpp: 99.29%
+inst/include/nanotime/globals.hpp: 100.00%
+inst/include/nanotime/interval.hpp: 100.00%
+inst/include/nanotime/period.hpp: 100.00%
+inst/include/nanotime/pseudovector.hpp: 100.00%
+inst/include/nanotime/utilities.hpp: 100.00%
+R/nanoduration.R: 100.00%
+R/nanoival.R: 100.00%
+R/nanoperiod.R: 100.00%
+R/nanotime.R: 100.00%
+src/duration.cpp: 100.00%
+src/nanotime.cpp: 100.00%
+src/period.cpp: 100.00%
+src/rounding.cpp: 100.00%
+src/strnlen.cpp: 100.00%
+34.18

@@ -1,0 +1,97 @@
+* installing *source* package ‘data.table’ ...
+** using non-staged installation
+** libs
+using C compiler: ‘gcc (Debian 12.2.0-14) 12.2.0’
+installing to /tmp/RtmpC50As7/R_LIBS825188f37/data.table/libs
+** R
+** inst
+** tests
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (data.table)
+data.table Coverage: 97.18%
+R/xts.R: 0.00%
+R/last.R: 47.92%
+R/fread.R: 68.82%
+src/fsort.c: 70.59%
+R/fwrite.R: 78.41%
+R/test.data.table.R: 88.84%
+src/openmp-utils.c: 90.36%
+src/fwrite.c: 91.68%
+src/chmatch.c: 92.31%
+R/tables.R: 94.29%
+src/forder.c: 94.96%
+src/ijoin.c: 95.40%
+R/transpose.R: 95.71%
+src/utils.c: 96.54%
+src/fastmean.c: 96.83%
+src/dogroups.c: 97.48%
+src/uniqlist.c: 97.67%
+src/init.c: 97.80%
+src/between.c: 98.11%
+R/fcast.R: 99.00%
+src/bmerge.c: 99.04%
+src/gsumm.c: 99.08%
+R/data.table.R: 99.08%
+src/rbindlist.c: 99.16%
+src/fread.c: 99.24%
+src/assign.c: 99.40%
+src/subset.c: 99.49%
+R/setops.R: 99.49%
+R/AllS4.R: 100.00%
+R/as.data.table.R: 100.00%
+R/between.R: 100.00%
+R/bmerge.R: 100.00%
+R/cedta.R: 100.00%
+R/duplicated.R: 100.00%
+R/fdroplevels.R: 100.00%
+R/fmelt.R: 100.00%
+R/foverlaps.R: 100.00%
+R/frank.R: 100.00%
+R/froll.R: 100.00%
+R/getdots.R: 100.00%
+R/groupingsets.R: 100.00%
+R/IDateTime.R: 100.00%
+R/like.R: 100.00%
+R/merge.R: 100.00%
+R/notin.R: 100.00%
+R/openmp-utils.R: 100.00%
+R/print.data.table.R: 100.00%
+R/programming.R: 100.00%
+R/setkey.R: 100.00%
+R/shift.R: 100.00%
+R/timetaken.R: 100.00%
+R/translation.R: 100.00%
+R/uniqlist.R: 100.00%
+R/utils.R: 100.00%
+R/wrappers.R: 100.00%
+src/cj.c: 100.00%
+src/coalesce.c: 100.00%
+src/fcast.c: 100.00%
+src/fifelse.c: 100.00%
+src/fmelt.c: 100.00%
+src/frank.c: 100.00%
+src/freadR.c: 100.00%
+src/froll.c: 100.00%
+src/frolladaptive.c: 100.00%
+src/frollR.c: 100.00%
+src/fwriteR.c: 100.00%
+src/idatetime.c: 100.00%
+src/inrange.c: 100.00%
+src/nafill.c: 100.00%
+src/negate.c: 100.00%
+src/nqrecreateindices.c: 100.00%
+src/programming.c: 100.00%
+src/quickselect.c: 100.00%
+src/reorder.c: 100.00%
+src/shift.c: 100.00%
+src/snprintf.c: 100.00%
+src/transpose.c: 100.00%
+src/types.c: 100.00%
+src/vecseq.c: 100.00%
+src/wrappers.c: 100.00%
+234.74

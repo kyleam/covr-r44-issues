@@ -1,0 +1,119 @@
+gcc 12.2.0
+zlib 1.2.13 is available ok
+* checking if R installation supports OpenMP without any extra hints... yes
+gcc -I"/opt/R/4.4.2/lib/R/include" -DNDEBUG   -I/usr/local/include   -fopenmp  -fpic  -g -O2  -O0 --coverage -c assign.c -o assign.o
+gcc -I"/opt/R/4.4.2/lib/R/include" -DNDEBUG   -I/usr/local/include   -fopenmp  -fpic  -g -O2  -O0 --coverage -c between.c -o between.o
+gcc -I"/opt/R/4.4.2/lib/R/include" -DNDEBUG   -I/usr/local/include   -fopenmp  -fpic  -g -O2  -O0 --coverage -c bmerge.c -o bmerge.o
+gcc -I"/opt/R/4.4.2/lib/R/include" -DNDEBUG   -I/usr/local/include   -fopenmp  -fpic  -g -O2  -O0 --coverage -c chmatch.c -o chmatch.o
+gcc -I"/opt/R/4.4.2/lib/R/include" -DNDEBUG   -I/usr/local/include   -fopenmp  -fpic  -g -O2  -O0 --coverage -c cj.c -o cj.o
+gcc -I"/opt/R/4.4.2/lib/R/include" -DNDEBUG   -I/usr/local/include   -fopenmp  -fpic  -g -O2  -O0 --coverage -c coalesce.c -o coalesce.o
+gcc -I"/opt/R/4.4.2/lib/R/include" -DNDEBUG   -I/usr/local/include   -fopenmp  -fpic  -g -O2  -O0 --coverage -c dogroups.c -o dogroups.o
+gcc -I"/opt/R/4.4.2/lib/R/include" -DNDEBUG   -I/usr/local/include   -fopenmp  -fpic  -g -O2  -O0 --coverage -c fastmean.c -o fastmean.o
+gcc -I"/opt/R/4.4.2/lib/R/include" -DNDEBUG   -I/usr/local/include   -fopenmp  -fpic  -g -O2  -O0 --coverage -c fcast.c -o fcast.o
+gcc -I"/opt/R/4.4.2/lib/R/include" -DNDEBUG   -I/usr/local/include   -fopenmp  -fpic  -g -O2  -O0 --coverage -c fifelse.c -o fifelse.o
+gcc -I"/opt/R/4.4.2/lib/R/include" -DNDEBUG   -I/usr/local/include   -fopenmp  -fpic  -g -O2  -O0 --coverage -c fmelt.c -o fmelt.o
+gcc -I"/opt/R/4.4.2/lib/R/include" -DNDEBUG   -I/usr/local/include   -fopenmp  -fpic  -g -O2  -O0 --coverage -c forder.c -o forder.o
+gcc -I"/opt/R/4.4.2/lib/R/include" -DNDEBUG   -I/usr/local/include   -fopenmp  -fpic  -g -O2  -O0 --coverage -c frank.c -o frank.o
+gcc -I"/opt/R/4.4.2/lib/R/include" -DNDEBUG   -I/usr/local/include   -fopenmp  -fpic  -g -O2  -O0 --coverage -c fread.c -o fread.o
+gcc -I"/opt/R/4.4.2/lib/R/include" -DNDEBUG   -I/usr/local/include   -fopenmp  -fpic  -g -O2  -O0 --coverage -c freadR.c -o freadR.o
+gcc -I"/opt/R/4.4.2/lib/R/include" -DNDEBUG   -I/usr/local/include   -fopenmp  -fpic  -g -O2  -O0 --coverage -c froll.c -o froll.o
+gcc -I"/opt/R/4.4.2/lib/R/include" -DNDEBUG   -I/usr/local/include   -fopenmp  -fpic  -g -O2  -O0 --coverage -c frollR.c -o frollR.o
+gcc -I"/opt/R/4.4.2/lib/R/include" -DNDEBUG   -I/usr/local/include   -fopenmp  -fpic  -g -O2  -O0 --coverage -c frolladaptive.c -o frolladaptive.o
+gcc -I"/opt/R/4.4.2/lib/R/include" -DNDEBUG   -I/usr/local/include   -fopenmp  -fpic  -g -O2  -O0 --coverage -c fsort.c -o fsort.o
+gcc -I"/opt/R/4.4.2/lib/R/include" -DNDEBUG   -I/usr/local/include   -fopenmp  -fpic  -g -O2  -O0 --coverage -c fwrite.c -o fwrite.o
+gcc -I"/opt/R/4.4.2/lib/R/include" -DNDEBUG   -I/usr/local/include   -fopenmp  -fpic  -g -O2  -O0 --coverage -c fwriteR.c -o fwriteR.o
+gcc -I"/opt/R/4.4.2/lib/R/include" -DNDEBUG   -I/usr/local/include   -fopenmp  -fpic  -g -O2  -O0 --coverage -c gsumm.c -o gsumm.o
+gcc -I"/opt/R/4.4.2/lib/R/include" -DNDEBUG   -I/usr/local/include   -fopenmp  -fpic  -g -O2  -O0 --coverage -c idatetime.c -o idatetime.o
+gcc -I"/opt/R/4.4.2/lib/R/include" -DNDEBUG   -I/usr/local/include   -fopenmp  -fpic  -g -O2  -O0 --coverage -c ijoin.c -o ijoin.o
+gcc -I"/opt/R/4.4.2/lib/R/include" -DNDEBUG   -I/usr/local/include   -fopenmp  -fpic  -g -O2  -O0 --coverage -c init.c -o init.o
+gcc -I"/opt/R/4.4.2/lib/R/include" -DNDEBUG   -I/usr/local/include   -fopenmp  -fpic  -g -O2  -O0 --coverage -c inrange.c -o inrange.o
+gcc -I"/opt/R/4.4.2/lib/R/include" -DNDEBUG   -I/usr/local/include   -fopenmp  -fpic  -g -O2  -O0 --coverage -c nafill.c -o nafill.o
+gcc -I"/opt/R/4.4.2/lib/R/include" -DNDEBUG   -I/usr/local/include   -fopenmp  -fpic  -g -O2  -O0 --coverage -c negate.c -o negate.o
+gcc -I"/opt/R/4.4.2/lib/R/include" -DNDEBUG   -I/usr/local/include   -fopenmp  -fpic  -g -O2  -O0 --coverage -c nqrecreateindices.c -o nqrecreateindices.o
+gcc -I"/opt/R/4.4.2/lib/R/include" -DNDEBUG   -I/usr/local/include   -fopenmp  -fpic  -g -O2  -O0 --coverage -c openmp-utils.c -o openmp-utils.o
+gcc -I"/opt/R/4.4.2/lib/R/include" -DNDEBUG   -I/usr/local/include   -fopenmp  -fpic  -g -O2  -O0 --coverage -c programming.c -o programming.o
+gcc -I"/opt/R/4.4.2/lib/R/include" -DNDEBUG   -I/usr/local/include   -fopenmp  -fpic  -g -O2  -O0 --coverage -c quickselect.c -o quickselect.o
+gcc -I"/opt/R/4.4.2/lib/R/include" -DNDEBUG   -I/usr/local/include   -fopenmp  -fpic  -g -O2  -O0 --coverage -c rbindlist.c -o rbindlist.o
+gcc -I"/opt/R/4.4.2/lib/R/include" -DNDEBUG   -I/usr/local/include   -fopenmp  -fpic  -g -O2  -O0 --coverage -c reorder.c -o reorder.o
+gcc -I"/opt/R/4.4.2/lib/R/include" -DNDEBUG   -I/usr/local/include   -fopenmp  -fpic  -g -O2  -O0 --coverage -c shift.c -o shift.o
+gcc -I"/opt/R/4.4.2/lib/R/include" -DNDEBUG   -I/usr/local/include   -fopenmp  -fpic  -g -O2  -O0 --coverage -c snprintf.c -o snprintf.o
+gcc -I"/opt/R/4.4.2/lib/R/include" -DNDEBUG   -I/usr/local/include   -fopenmp  -fpic  -g -O2  -O0 --coverage -c subset.c -o subset.o
+gcc -I"/opt/R/4.4.2/lib/R/include" -DNDEBUG   -I/usr/local/include   -fopenmp  -fpic  -g -O2  -O0 --coverage -c transpose.c -o transpose.o
+gcc -I"/opt/R/4.4.2/lib/R/include" -DNDEBUG   -I/usr/local/include   -fopenmp  -fpic  -g -O2  -O0 --coverage -c types.c -o types.o
+gcc -I"/opt/R/4.4.2/lib/R/include" -DNDEBUG   -I/usr/local/include   -fopenmp  -fpic  -g -O2  -O0 --coverage -c uniqlist.c -o uniqlist.o
+gcc -I"/opt/R/4.4.2/lib/R/include" -DNDEBUG   -I/usr/local/include   -fopenmp  -fpic  -g -O2  -O0 --coverage -c utils.c -o utils.o
+gcc -I"/opt/R/4.4.2/lib/R/include" -DNDEBUG   -I/usr/local/include   -fopenmp  -fpic  -g -O2  -O0 --coverage -c vecseq.c -o vecseq.o
+gcc -I"/opt/R/4.4.2/lib/R/include" -DNDEBUG   -I/usr/local/include   -fopenmp  -fpic  -g -O2  -O0 --coverage -c wrappers.c -o wrappers.o
+gcc -shared -L/opt/R/4.4.2/lib/R/lib -L/usr/local/lib --coverage -o data.table.so assign.o between.o bmerge.o chmatch.o cj.o coalesce.o dogroups.o fastmean.o fcast.o fifelse.o fmelt.o forder.o frank.o fread.o freadR.o froll.o frollR.o frolladaptive.o fsort.o fwrite.o fwriteR.o gsumm.o idatetime.o ijoin.o init.o inrange.o nafill.o negate.o nqrecreateindices.o openmp-utils.o programming.o quickselect.o rbindlist.o reorder.o shift.o snprintf.o subset.o transpose.o types.o uniqlist.o utils.o vecseq.o wrappers.o -fopenmp -lz -L/opt/R/4.4.2/lib/R/lib -lR
+PKG_CFLAGS = -fopenmp
+PKG_LIBS = -fopenmp -lz
+if [ "data.table.so" != "data_table.so" ]; then mv data.table.so data_table.so; fi
+if [ "" != "Windows_NT" ] && [ `uname -s` = 'Darwin' ]; then install_name_tool -id data_table.so data_table.so; fi
+  converting help for package ‘data.table’
+    IDateTime                               example
+    J                                       example
+    address                                 example
+    all.equal.data.table                    example
+    as.data.table                           example
+    as.data.table.xts                       example
+    as.matrix                               example
+    as.xts.data.table                       example
+    assign                                  example
+    between                                 example
+    chmatch                                 example
+    coalesce                                example
+    copy                                    example
+    data.table-class                        example
+    data.table                              example
+    datatable-optimize                      example
+    dcast.data.table                        example
+    deprecated                              example
+    duplicated                              example
+    fcase                                   example
+    fdroplevels                             example
+    fifelse                                 example
+    foverlaps                               example
+    frank                                   example
+    fread                                   example
+    froll                                   example
+    fsort                                   example
+    fwrite                                  example
+    groupingsets                            example
+    last                                    example
+    last.updated                            example
+    like                                    example
+    measure                                 example
+    melt.data.table                         example
+    merge                                   example
+    na.omit.data.table                      example
+    nafill                                  example
+    notin                                   example
+    openmp-utils                            example
+    patterns                                example
+    print.data.table                        example
+    rbindlist                               example
+    rleid                                   example
+    rowid                                   example
+    setDF                                   example
+    setDT                                   example
+    setNumericRounding                      example
+    setattr                                 example
+    setcolorder                             example
+    setkey                                  example
+    setops                                  example
+    setorder                                example
+    shift                                   example
+    shouldPrint                             example
+    special-symbols                         example
+    split                                   example
+    subset.data.table                       example
+    substitute2                             example
+    tables                                  example
+    test                                    example
+    test.data.table                         example
+    timetaken                               example
+    transform.data.table                    example
+    transpose                               example
+    truelength                              example
+    tstrsplit                               example
+    update_dev_pkg                          example
