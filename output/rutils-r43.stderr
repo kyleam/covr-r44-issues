@@ -1,4 +1,4 @@
-* installing *source* package 'R.utils' ...
+* installing *source* package ‘R.utils’ ...
 ** using non-staged installation
 ** R
 ** inst
@@ -9,23 +9,23 @@
 ** building package indices
 ** testing if installed package can be loaded
 * DONE (R.utils)
-R.utils Coverage: 63.87%
+R.utils Coverage: 63.84%
 R/Assert.R: 0.00%
 R/CmdArgsFunction.R: 0.00%
-R/FileListTree.R: 0.00%
-R/GenericSummary.R: 0.00%
-R/LComments.R: 0.00%
 R/copyDirectory.R: 0.00%
 R/createWindowsShortcut.R: 0.00%
 R/density.EXTS.R: 0.00%
 R/detachPlain.R: 0.00%
 R/downloadFile.R: 0.00%
+R/FileListTree.R: 0.00%
+R/GenericSummary.R: 0.00%
 R/getCommonPrefix.R: 0.00%
 R/hsize.R: 0.00%
 R/inAnyInterval.R: 0.00%
 R/installPackages.R: 0.00%
 R/isEof.connection.R: 0.00%
 R/isOpen.character.R: 0.00%
+R/LComments.R: 0.00%
 R/mapToIntervals.R: 0.00%
 R/mergeByCommonTails.R: 0.00%
 R/mergeIntervals.R: 0.00%
@@ -72,12 +72,13 @@ R/compressPDF.R: 70.21%
 R/readWindowsShortcut.R: 71.48%
 R/unwrap.array.R: 71.83%
 R/subplots.R: 73.91%
-R/VComments.R: 75.00%
 R/onSessionExit.R: 75.00%
+R/VComments.R: 75.00%
 R/filePath.R: 75.51%
 R/GString-class.R: 75.70%
 R/Options.R: 76.03%
 R/getParent.R: 78.57%
+R/withLocale.R: 78.57%
 R/findSourceTraceback.R: 79.31%
 R/lastModified.R: 80.00%
 R/loadObject.R: 80.77%
@@ -95,7 +96,6 @@ R/withSink.R: 84.21%
 R/popBackupFile.R: 84.31%
 R/fileAccess.R: 85.00%
 R/withCapture.R: 85.71%
-R/withLocale.R: 85.71%
 R/getRelativePath.R: 86.27%
 R/getAbsolutePath.R: 88.00%
 R/intervalsToSeq.R: 88.89%
@@ -104,8 +104,8 @@ R/removeDirectory.R: 89.47%
 R/renameFile.R: 89.47%
 R/displayCode.R: 90.11%
 R/popTemporaryFile.R: 90.62%
-R/MultiVerbose.R: 90.91%
 R/hpaste.R: 90.91%
+R/MultiVerbose.R: 90.91%
 R/whichVector.R: 90.91%
 R/findFiles.R: 91.03%
 R/callHooks.R: 91.11%
@@ -134,12 +134,11 @@ R/cmdArgs.R: 96.49%
 R/withTimeout.R: 96.67%
 R/parseArgs.R: 97.06%
 R/006.fixVarArgs.R: 100.00%
-R/FileProgressBar.R: 100.00%
-R/TimeoutException.R: 100.00%
 R/capitalize.R: 100.00%
 R/dataFrame.R: 100.00%
 R/egsub.R: 100.00%
 R/env.R: 100.00%
+R/FileProgressBar.R: 100.00%
 R/finalizeSession.R: 100.00%
 R/gcat.R: 100.00%
 R/gstring.R: 100.00%
@@ -156,6 +155,7 @@ R/resample.R: 100.00%
 R/seqToHumanReadable.R: 100.00%
 R/seqToIntervals.R: 100.00%
 R/systemR.R: 100.00%
+R/TimeoutException.R: 100.00%
 R/tmpfile.R: 100.00%
 R/toCamelCase.R: 100.00%
-759.02
+754.49

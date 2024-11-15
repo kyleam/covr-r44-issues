@@ -4,7 +4,7 @@ Warning in setGenericS3.default("use") :
   Renamed the preexisting function use to use.default, which was defined in environment R.utils.
 Warning in setMethodS3.default("use", "default", function(pkg = "R.utils",  :
   Method already existed and was overwritten: use.default
-  converting help for package 'R.utils'
+  converting help for package ‘R.utils’
     FileProgressBar                         example
     GString-class                           example
     Java                                    example
