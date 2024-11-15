@@ -1,0 +1,21 @@
+* installing *source* package ‘diffobj’ ...
+** using non-staged installation
+** libs
+using C compiler: ‘gcc (Debian 12.2.0-14) 12.2.0’
+installing to /tmp/RtmpPNX9ag/R_LIBS851ceb5c8/diffobj/libs
+** R
+** inst
+** tests
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (diffobj)
+Error in seq.default(df[i, "first_line"], df[i, "last_line"]) : 
+  'from' must be a finite number
+Calls: <Anonymous> ... vlapply -> vapply -> FUN -> %in% -> seq -> seq.default
+Execution halted
+Command exited with non-zero status 1
+1126.15

@@ -1,0 +1,45 @@
+* installing *source* package ‘diffobj’ ...
+** using non-staged installation
+** libs
+using C compiler: ‘gcc (Debian 12.2.0-14) 12.2.0’
+installing to /tmp/Rtmp9vvG17/R_LIBS844ea20cd/diffobj/libs
+** R
+** inst
+** tests
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (diffobj)
+diffobj Coverage: 99.08%
+src/diff.c: 89.50%
+src/diffobj.c: 97.06%
+R/word.R: 98.28%
+R/diff.R: 99.25%
+R/check.R: 99.40%
+R/guides.R: 99.49%
+R/summmary.R: 99.52%
+R/core.R: 99.74%
+R/hunks.R: 99.75%
+R/tochar.R: 99.76%
+R/capt.R: 100.00%
+R/finalizer.R: 100.00%
+R/get.R: 100.00%
+R/html.R: 100.00%
+R/layout.R: 100.00%
+R/misc.R: 100.00%
+R/myerssimple.R: 100.00%
+R/options.R: 100.00%
+R/pager.R: 100.00%
+R/rdiff.R: 100.00%
+R/rds.R: 100.00%
+R/s4.R: 100.00%
+R/set.R: 100.00%
+R/styles.R: 100.00%
+R/subset.R: 100.00%
+R/text.R: 100.00%
+R/trim.R: 100.00%
+src/init.c: 100.00%
+230.69

@@ -1,0 +1,32 @@
+gcc -I"/opt/R/4.4.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -O0 --coverage -c diff.c -o diff.o
+gcc -I"/opt/R/4.4.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -O0 --coverage -c diffobj.c -o diffobj.o
+gcc -I"/opt/R/4.4.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -O0 --coverage -c init.c -o init.o
+gcc -shared -L/opt/R/4.4.2/lib/R/lib -L/usr/local/lib --coverage -o diffobj.so diff.o diffobj.o init.o -L/opt/R/4.4.2/lib/R/lib -lR
+  converting help for package ‘diffobj’
+    AlignThreshold-class                    example
+    Extract_PaletteOfStyles                 example
+    Pager                                   example
+    PaletteOfStyles-class                   example
+    Style                                   example
+    any-Diff-method                         example
+    as.character-DiffSummary-method         example
+    auto_context                            example
+    console_lines                           example
+    diffChr                                 example
+    diffCsv                                 example
+    diffDeparse                             example
+    diffFile                                example
+    diffObj                                 example
+    diffPrint                               example
+    diffStr                                 example
+    diffobj_set_def_opts                    example
+    gdo                                     example
+    guides                                  example
+    has_Rdiff                               example
+    make_blocking                           example
+    nchar_html                              example
+    pager_is_less                           example
+    ses                                     example
+    show-Style-method                       example
+    tag_f                                   example
+    webfiles                                example
