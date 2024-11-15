@@ -21,30 +21,90 @@ fix for that issue.
 Slowdown
 --------
 
+### data.table
+
 **R 4.3 run**
 
-https://github.com/kyleam/covr-r44-issues/blob/feacfae774e36b3e50a26a20804cf09b6d1d99b6/output/rutils-r43.stderr#L161
+https://github.com/kyleam/covr-r44-issues/blob/fab8e7bc7fd9705f0671ebf0bf23eecb83780be5/output/datatable-r43.stderr#L97
 
 **R 4.4 run**
 
-https://github.com/kyleam/covr-r44-issues/blob/feacfae774e36b3e50a26a20804cf09b6d1d99b6/output/rutils-r44.stderr#L161
+https://github.com/kyleam/covr-r44-issues/blob/fab8e7bc7fd9705f0671ebf0bf23eecb83780be5/output/datatable-r44.stderr#L21
 
 **R 4.4 patched run**
 
-https://github.com/kyleam/covr-r44-issues/blob/feacfae774e36b3e50a26a20804cf09b6d1d99b6/output/rutils-r44-drop-outer.stderr#L161
+https://github.com/kyleam/covr-r44-issues/blob/fab8e7bc7fd9705f0671ebf0bf23eecb83780be5/output/datatable-r44-drop-outer.stderr#L97
+
+### diffobj
+
+**R 4.3 run**
+
+https://github.com/kyleam/covr-r44-issues/blob/fab8e7bc7fd9705f0671ebf0bf23eecb83780be5/output/diffobj-r43.stderr#L45
+
+**R 4.4 run**
+
+https://github.com/kyleam/covr-r44-issues/blob/fab8e7bc7fd9705f0671ebf0bf23eecb83780be5/output/diffobj-r44.stderr#L21
+
+**R 4.4 patched run**
+
+https://github.com/kyleam/covr-r44-issues/blob/fab8e7bc7fd9705f0671ebf0bf23eecb83780be5/output/diffobj-r44-drop-outer.stderr#L45
+
+### R.utils
+
+**R 4.3 run**
+
+https://github.com/kyleam/covr-r44-issues/blob/fab8e7bc7fd9705f0671ebf0bf23eecb83780be5/output/rutils-r43.stderr#L161
+
+**R 4.4 run**
+
+https://github.com/kyleam/covr-r44-issues/blob/fab8e7bc7fd9705f0671ebf0bf23eecb83780be5/output/rutils-r44.stderr#L161
+
+**R 4.4 patched run**
+
+https://github.com/kyleam/covr-r44-issues/blob/fab8e7bc7fd9705f0671ebf0bf23eecb83780be5/output/rutils-r44-drop-outer.stderr#L161
 
 
 Exclusions error
 ----------------
 
+### data.table
+
 **R 4.3 run**
 
-https://github.com/kyleam/covr-r44-issues/blob/feacfae774e36b3e50a26a20804cf09b6d1d99b6/output/nanotime-r43.stderr#L17-L18
+https://github.com/kyleam/covr-r44-issues/blob/fab8e7bc7fd9705f0671ebf0bf23eecb83780be5/output/datatable-r43.stderr#L15-L16
 
 **R 4.4 run**
 
-https://github.com/kyleam/covr-r44-issues/blob/feacfae774e36b3e50a26a20804cf09b6d1d99b6/output/nanotime-r44.stderr#L17-L22
+https://github.com/kyleam/covr-r44-issues/blob/fab8e7bc7fd9705f0671ebf0bf23eecb83780be5/output/datatable-r44.stderr#L15-L20
 
 **R 4.4 patched run**
 
-https://github.com/kyleam/covr-r44-issues/blob/feacfae774e36b3e50a26a20804cf09b6d1d99b6/output/nanotime-r44-drop-outer.stderr#L17-L18
+https://github.com/kyleam/covr-r44-issues/blob/fab8e7bc7fd9705f0671ebf0bf23eecb83780be5/output/datatable-r44-drop-outer.stderr#L15-L16
+
+### diffobj
+
+**R 4.3 run**
+
+https://github.com/kyleam/covr-r44-issues/blob/fab8e7bc7fd9705f0671ebf0bf23eecb83780be5/output/diffobj-r43.stderr#L15-L16
+
+**R 4.4 run**
+
+https://github.com/kyleam/covr-r44-issues/blob/fab8e7bc7fd9705f0671ebf0bf23eecb83780be5/output/diffobj-r44.stderr#L15-L20
+
+**R 4.4 patched run**
+
+https://github.com/kyleam/covr-r44-issues/blob/fab8e7bc7fd9705f0671ebf0bf23eecb83780be5/output/diffobj-r44-drop-outer.stderr#L15-L16
+
+### nanotime
+
+**R 4.3 run**
+
+https://github.com/kyleam/covr-r44-issues/blob/fab8e7bc7fd9705f0671ebf0bf23eecb83780be5/output/nanotime-r43.stderr#L17-L18
+
+**R 4.4 run**
+
+https://github.com/kyleam/covr-r44-issues/blob/fab8e7bc7fd9705f0671ebf0bf23eecb83780be5/output/nanotime-r44.stderr#L17-L22
+
+**R 4.4 patched run**
+
+https://github.com/kyleam/covr-r44-issues/blob/fab8e7bc7fd9705f0671ebf0bf23eecb83780be5/output/nanotime-r44-drop-outer.stderr#L17-L18
